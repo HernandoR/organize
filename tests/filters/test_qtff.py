@@ -22,7 +22,7 @@ def test_qtff_read_camera(images_folder):
             - exif
           actions:
             - write:
-                text: '{name}: {qtff.Metadata."Creation date"}'
+                text: '{name}: {qtff.Metadata.['Camera model']}'
                 path: "out.txt"
                 mode: append
     """

@@ -99,17 +99,6 @@ class Qtff(Filter):
         return dict(result)
 
 
-    # def category_dict(self, tags: Mapping[str, str]) -> QtffDict:
-    # 
-    #     result = collections.defaultdict(dict)  # type: DefaultDict
-    #     for key, value in tags.items():
-    #         if " " in key:
-    #             category, field = key.split(" ", maxsplit=1)
-    #             result[category][field] = to_datetime(field, value)
-    #         else:
-    #             result[key] = to_datetime(key, value)
-    #     return dict(result)
-
     
     def matches(self, qtffTags: dict) -> bool:
         if not qtffTags:
